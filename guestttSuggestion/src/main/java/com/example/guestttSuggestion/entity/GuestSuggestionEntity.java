@@ -12,6 +12,10 @@ public class GuestSuggestionEntity {
     private Long id;
 
     @Column
+    @Enumerated(EnumType.STRING)
+    private SuggestionStatus status;
+
+    @Column
     private double rate;
 
     @Column
@@ -44,5 +48,13 @@ public class GuestSuggestionEntity {
 
     public void setSuggestion(String suggestion) {
         this.suggestion = suggestion;
+    }
+
+    public SuggestionStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(SuggestionStatus status) {
+        this.status = status;
     }
 }

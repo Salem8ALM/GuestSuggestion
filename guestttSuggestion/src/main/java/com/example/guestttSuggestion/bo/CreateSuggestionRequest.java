@@ -9,6 +9,7 @@ public class CreateSuggestionRequest {
 
     private double rate;
     private String suggestion;
+    private String status;
 
     public CreateSuggestionRequest() {
 
@@ -28,5 +29,13 @@ public class CreateSuggestionRequest {
 
     public void setSuggestion(String suggestion) {
         this.suggestion = suggestion;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
